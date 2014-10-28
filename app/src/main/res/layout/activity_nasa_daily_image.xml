@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_dark"
+    android:id="@+id/outsideScrowView3LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:id="@+id/screenHeader">
+
+        <LinearLayout
+            android:background="@android:color/background_dark"
+            android:id="@+id/insideScrowView3LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_weight="2"
+                android:text="@string/nasaImageHeader" />
+
+            <TextView
+                android:id="@+id/textViewSubHeader"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nasaImageSubHeader" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:adjustViewBounds="true"
+                android:src="@drawable/nasa"
+                android:layout_weight="3"
+                android:scaleType="fitStart" />
+
+            <TextView
+                android:id="@+id/textViewDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_weight="2"
+                android:text="@string/nasaImageDesc"
+                android:scaleType="fitStart" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
